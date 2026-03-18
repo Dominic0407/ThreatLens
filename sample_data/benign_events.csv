@@ -1,0 +1,26 @@
+timestamp,hostname,username,source_ip,destination_ip,destination_port,process_name,parent_process,command_line,event_type,protocol,failed_logins,encoded_command,external_connection,privilege_escalation_flag,persistence_flag,severity_label,probable_attack_category
+2024-01-15 08:02:11,WORKSTATION-01,jsmith,192.168.1.10,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --profile-directory=Default,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 08:12:45,WORKSTATION-01,jsmith,192.168.1.10,192.168.1.20,445,WINWORD.EXE,explorer.exe,WINWORD.EXE /n "C:\Users\jsmith\Documents\Q1_Report.docx",file_access,TCP,0,False,False,False,False,benign,None
+2024-01-15 08:31:02,WORKSTATION-02,mjones,192.168.1.11,192.168.1.1,80,chrome.exe,explorer.exe,chrome.exe --type=utility --field-trial-handle=1234,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 08:45:19,WORKSTATION-03,alee,192.168.1.12,192.168.1.20,445,EXCEL.EXE,explorer.exe,EXCEL.EXE "C:\Users\alee\Documents\budget.xlsx",file_access,TCP,0,False,False,False,False,benign,None
+2024-01-15 09:01:33,WORKSTATION-04,bwilson,192.168.1.13,192.168.1.30,389,OUTLOOK.EXE,explorer.exe,OUTLOOK.EXE /recycle,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 09:14:07,WORKSTATION-02,mjones,192.168.1.11,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --renderer-process-limit=5,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 09:22:41,SERVER-FILE01,svc_backup,192.168.1.50,192.168.1.20,445,robocopy.exe,services.exe,robocopy C:\Data \\BACKUP-01\Share /MIR /LOG:backup.log,file_access,TCP,0,False,False,False,False,benign,None
+2024-01-15 09:35:18,WORKSTATION-05,cthomas,192.168.1.14,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --profile-directory=Profile1,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 09:47:52,WORKSTATION-01,jsmith,192.168.1.10,192.168.1.1,443,OUTLOOK.EXE,explorer.exe,OUTLOOK.EXE,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 10:01:29,WORKSTATION-03,alee,192.168.1.12,192.168.1.1,80,chrome.exe,explorer.exe,chrome.exe --type=renderer,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 10:14:04,WORKSTATION-06,dmartin,192.168.1.15,192.168.1.20,3389,mstsc.exe,explorer.exe,mstsc.exe /v:SERVER-FILE01,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 10:28:37,WORKSTATION-04,bwilson,192.168.1.13,192.168.1.20,445,WINWORD.EXE,explorer.exe,WINWORD.EXE /n "C:\Users\bwilson\Documents\policy.docx",file_access,TCP,0,False,False,False,False,benign,None
+2024-01-15 10:41:13,SERVER-DC01,svc_monitor,192.168.1.2,192.168.1.10,445,taskmgr.exe,services.exe,taskmgr.exe,process_create,TCP,0,False,False,False,False,benign,None
+2024-01-15 10:55:46,WORKSTATION-07,eharris,192.168.1.16,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --type=gpu-process,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 11:03:21,WORKSTATION-05,cthomas,192.168.1.14,192.168.1.30,389,OUTLOOK.EXE,explorer.exe,OUTLOOK.EXE /recycle,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 11:17:58,WORKSTATION-08,fgarcia,192.168.1.17,192.168.1.1,80,chrome.exe,explorer.exe,chrome.exe --disable-extensions,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 11:32:34,WORKSTATION-01,jsmith,192.168.1.10,192.168.1.20,445,EXCEL.EXE,explorer.exe,EXCEL.EXE "C:\Users\jsmith\Desktop\sales_data.xlsx",file_access,TCP,0,False,False,False,False,benign,None
+2024-01-15 11:44:09,WORKSTATION-06,dmartin,192.168.1.15,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --restore-last-session,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 11:58:45,SERVER-FILE01,svc_backup,192.168.1.50,192.168.1.2,389,svchost.exe,services.exe,svchost.exe -k netsvcs,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 12:11:22,WORKSTATION-02,mjones,192.168.1.11,192.168.1.20,445,notepad.exe,explorer.exe,notepad.exe C:\Users\mjones\notes.txt,file_access,TCP,0,False,False,False,False,benign,None
+2024-01-15 12:24:57,WORKSTATION-09,gharrison,192.168.1.18,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --remote-debugging-port=0,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 13:02:34,WORKSTATION-03,alee,192.168.1.12,192.168.1.30,389,OUTLOOK.EXE,explorer.exe,OUTLOOK.EXE /recycle,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 13:15:11,SERVER-DC01,svc_monitor,192.168.1.2,192.168.1.11,445,svchost.exe,services.exe,svchost.exe -k LocalSystemNetworkRestricted,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 13:28:48,WORKSTATION-10,ilopez,192.168.1.19,192.168.1.1,443,chrome.exe,explorer.exe,chrome.exe --type=extension,network_connection,TCP,0,False,False,False,False,benign,None
+2024-01-15 14:01:25,WORKSTATION-07,eharris,192.168.1.16,192.168.1.20,445,WINWORD.EXE,explorer.exe,WINWORD.EXE /n "C:\Users\eharris\Documents\contract.docx",file_access,TCP,0,False,False,False,False,benign,None
