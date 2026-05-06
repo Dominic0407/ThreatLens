@@ -4,8 +4,6 @@
 
 ThreatLens is an offline Python CLI tool that ingests synthetic security event data, extracts interpretable features, applies a rule-based weighted scoring model, uses a lightweight Random Forest classifier to support prioritization, maps events to ATT&CK-style behavior categories, and generates analyst-friendly reports.
 
-> **Portfolio project** — Built to demonstrate practical cybersecurity data analysis skills for hiring managers and SOC-adjacent roles.  Operates fully offline on synthetic/sanitized data.  Not a production SOC platform.
-
 ---
 
 ## Why This Project Matters
@@ -290,15 +288,6 @@ The test suite includes:
 - **JSON/STIX output** for integration with threat intelligence platforms
 - **YAML-configurable rule weights** for easy environment-specific tuning
 - **CSV export of scored events** for import into spreadsheets or SIEM
-
----
-
-## Resume Relevance
-
-- **Security Operations / SOC Analyst roles** — event triage, alert prioritization, ATT&CK framework familiarity
-- **Security Engineering roles** — building detection logic, feature engineering from security telemetry
-- **Data Science / ML Engineering in security** — applying ML to labeled security event data with transparent, explainable models
-- **Python Engineering** — modular, well-documented, tested Python package design
 
 ---
 
