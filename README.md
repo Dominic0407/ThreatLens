@@ -302,10 +302,6 @@ This project demonstrates practical skills directly relevant to:
 - **Data Science / ML Engineering in security** — applying ML to labeled security event data with transparent, explainable models
 - **Python Engineering** — modular, well-documented, tested Python package design
 
-**One-line resume bullet:**
-
-> Built ThreatLens, an offline Python CLI tool that applies transparent weighted scoring and Random Forest classification to synthetic security events, maps threats to ATT&CK-style tactic categories, and generates analyst-ready JSON and Markdown reports.
-
 ---
 
 ## License
