@@ -291,6 +291,17 @@ The test suite includes:
 
 ---
 
+## Resume Relevance
+
+This project demonstrates practical skills directly relevant to:
+
+- **Security Operations / SOC Analyst roles** — event triage, alert prioritization, ATT&CK framework familiarity
+- **Security Engineering roles** — building detection logic, feature engineering from security telemetry
+- **Data Science / ML Engineering in security** — applying ML to labeled security event data with transparent, explainable models
+- **Python Engineering** — modular, well-documented, tested Python package design
+
+---
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
